@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<!-- codepen.io -->
+		<!-- mozilla -->
+		<!-- thimble-->
+<head>
+
+<title>My First JavaScript</title>
+<style>
+body {
+	background-color: teal;
+	border: 5px solid red;
+	border-style: dotted dashed solid;
+	border-radius: 1px;
+	outline-style: outset;
+	outline-color: black;
+	
+}
+iframe { 
+text-align: center
+}
+
+#demo1 { 
+	color: #009fff
+	font-family: comic sans sm;
+	font-size: 50px;
+}
+	
+p {
+	color: #000596;
+	font-size: 20px;
+	font-family: comic sans ms;
+}
+h1 {
+	color: saddlebrown;
+	font-size: 50px;
+	font-family: arial black;
+	border: 5px solid red;
+	border-radius: 30px;
+	background-color: white;
+	}
+	
+	#navbar ul {
+margin: 0;
+padding: 5px;
+list-style-type: none;
+text-align: center;
+background-color: #000;
+}
+
+#navbar ul li {
+display: inline;
+}
+
+#navbar ul li a {
+text-decoration: none;
+padding: .2em 1em;
+color: #fff;
+background-color: #000;
+}
+
+#navbar ul li a:hover {
+color: #000;
+background-color: #fff;
+}
+
+.header {
+  color: white;
+  font-size: 25px;
+  background-image: url("http://img06.deviantart.net/d045/i/2013/037/d/a/starry_sky_by_zachshoemakr-d5u3g38.png");
+  padding: 10px;
+	border-radius: 3px;
+	border: 8px solid black;
+}
+
+.footer {
+    color: white;
+  text-align: center;
+  padding: 10px;
+   background-image: url("http://img06.deviantart.net/d045/i/2013/037/d/a/starry_sky_by_zachshoemakr-d5u3g38.png");
+    font-size: 25px;
+	border-radius: 1px;
+	border: 5px solid black;
+}
+</style>
+</head>
+<body>
+<div id="navbar">
+<ul>
+<li><a href="file:///C:/Users/705Parent05/Documents/Site/AJs%20Pointless%20HTML%20File.html">Home</a></li>
+<li><a href="file:///C:/Users/705Parent05/Documents/Site/Wierd%20Stuff.html">Wierd Stuff</a></li>
+<li><a href="file:///C:/Users/705Parent05/Documents/Site/AJs%20Pointless%20HTML%20File%20%20part%20%232.html">PAGE 2</a></li>
+<li><a href="file:///C:/Users/705Parent05/Documents/Site/AJs%20Pointless%20JavaScript%20File.html">JavaScript</a></li>
+<li><a href="http://github.com">GitHUB</a></li>
+</ul>
+</div>
+<div class="header">
+	<h2>MY POINTLESS WEBSITE</h2>
+	
+	</div>
+	<br>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<br>
+
+<br>
+<script>
+document.getElementById("demo3").innerHTML = "Hello USER.";
+</script> 
+<button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<script>
+document.getElementById("demo2").innerHTML =  Math.floor(Math.random() * 100);
+</script>
+
+<button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+<br>
+<a href="file:///C:/Users/705Parent05/Documents/Site/Pointless%20Game.html"><h1>Pointless game</h1></a>
+<br>
+<div class="footer">
+	<h2> I hope your happy <BR> because you just waisted the precious time that you had in your life</h2>
+	<button type="button" class="btn btn-success" onclick="alert('CONGRATULATIONS!')">Click Me!</button>
+ </div>
+</body>
+</html> 
