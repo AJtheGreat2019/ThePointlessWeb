@@ -123,13 +123,34 @@ document.getElementById("demo2").innerHTML =  Math.floor(Math.random() * 100);
 <br>
 <a href="Pointless Game.html"><h1>Pointless game</h1></a>
 <br>
-	<script>
+	
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo4"></p>
+
+<script>
 function myFunction() {
-  var str = "Hello!";
-  document.getElementById("demo4").innerHTML = str.repeat(2);
+  var text;
+  var fruits = document.getElementById("myInput").value;
+
+  switch(fruits) {
+    case "Hi Wierdo":
+      text = "Your a wierdo!";
+    break;
+    case "No you":
+    text = "actually you.";
+    break;
+    case "Just accept it":
+    text = "No you accept it";
+    break;
+    default:
+    text = "OK FINE";
+  }
+  document.getElementById("demo4").innerHTML = text;
 }
 </script>
-
 <br>
 	<img src="images/Pointless game.jpg" style="width:295px;height: 295px;" alt=Pointless game"
 <br>
